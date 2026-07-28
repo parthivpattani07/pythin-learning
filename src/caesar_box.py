@@ -14,7 +14,7 @@ def caesar_box(code,size):       # size is always squre root of total letters.
 print(caesar_box(code1,4))
 print(caesar_box(code2,8))
 
-output:  tresureburiedatx 
-        The code is decihpherd and now breaking it into words will give us the hidden message.   # tresure buried at x
-        THEFUTUREBELONGSTOTHOSEWHOBELIEVE
-        The code is decihpherd and now breaking it into words will give us the hidden message.   # THE FUTURE BELONGS TO THOSE WHO BELIEVE
+#output:  tresureburiedatx 
+       # The code is decihpherd and now breaking it into words will give us the hidden message.   tresure buried at x
+       # THEFUTUREBELONGSTOTHOSEWHOBELIEVE
+       # The code is decihpherd and now breaking it into words will give us the hidden message.   THE FUTURE BELONGS TO THOSE WHO BELIEVE
