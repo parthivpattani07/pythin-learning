@@ -22,4 +22,4 @@ poem3 = 'There\nonce\nwas\na\ndragon'
 
 print(pin_extractor( [poem, poem2, poem3]))
 
- output: [ '5202', '3346','50000']
+ #output: [ '5202', '3346','50000']
