@@ -90,4 +90,4 @@ def validate(data):
 validate(medical_records)
 
 #output: Valid format.
-#if there is any mistake  in nay of data the program finds and reports it.
+#If there is any mistake  in any of data, the program finds and reports it.
