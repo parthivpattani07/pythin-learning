@@ -87,7 +87,11 @@ def validate(data):
     print('Valid format.')
     return True
 
+"""
+input:
 validate(medical_records)
 
-#output: Valid format.
-# If there is any error in format the program finds and reports it.
+output: 
+Valid format.
+
+"""
