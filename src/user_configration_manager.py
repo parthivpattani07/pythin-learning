@@ -52,4 +52,9 @@ print(update_setting(test_settings,tuple_test3))
 print(delete_setting(test_settings,'theme'))
 print(view_settings(test_settings))
 output:
+Setting 'theme' already exists! Cannot add a new setting with this name.
+Setting 'theme' updated to 'dark' successfully!
+Setting 'theme' deleted successfully!
+Current User Settings:
+Sgfir:rbger
 """
