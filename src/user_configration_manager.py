@@ -19,10 +19,6 @@ def update_setting(settings, values):
     else:
         settings[values[0].lower()] = values[1].lower()
         return f"Setting '{values[0].lower()}' updated to '{values[1].lower()}' successfully!"
-    key,value=values
-    key=key.lower()
-    
-    
 
 def delete_setting(settings, key):
     key = key.lower()
