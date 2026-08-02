@@ -3,8 +3,7 @@ test_settings={
     'sgfir':'rbger'
 }
 tuple_test=('THEME','dark')
-tuple_test2=('volume','high') 
-tuple_test3=('theme','dark')
+
 def add_setting(settings, values):
     key, value = values
 
@@ -48,7 +47,7 @@ def view_settings(test_settings):
 """
 input:
 print(add_setting(test_settings,tuple_test))
-print(update_setting(test_settings,tuple_test3))
+print(update_setting(test_settings,tuple_test))
 print(delete_setting(test_settings,'theme'))
 print(view_settings(test_settings))
 output:
