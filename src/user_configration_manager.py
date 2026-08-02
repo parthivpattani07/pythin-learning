@@ -1,21 +1,55 @@
 test_settings={
-    'theme':'light'
+    'theme':'light',
+    'sgfir':'rbger'
 }
-test_tuple=('THEME','dark')
-    
-    
-    
-def add_setting(settings_dict,kv_tuple):
-    
-    raw_key, value = kv_tuple
-    key = raw_key.lower()
-    if key in settings_dict:
-        return ( f 'Setting {raw_key} already exists! Cannot add a new setting with this name.')
-    settings_dict[key] = value
-    return (f"Setting {key} successfully added!")
+tuple_test=('THEME','dark')
+tuple_test2=('volume','high') 
+tuple_test3=('theme','dark')
+def add_setting(settings, values):
+    key, value = values
 
+    if key.lower() in settings:
+            return f"Setting '{key.lower()}' already exists! Cannot add a new setting with this name."
+    else:
+        settings[key.lower()] = value.lower()
+        return f"Setting '{key.lower()}' added with value '{value.lower()}' successfully!"
+
+def update_setting(settings, values):
+    if not values[0].lower() in settings:
+        return f"Setting '{values[0].lower()}' does not exist! Cannot update a non-existing setting."
+    else:
+        settings[values[0].lower()] = values[1].lower()
+        return f"Setting '{values[0].lower()}' updated to '{values[1].lower()}' successfully!"
+    key,value=values
+    key=key.lower()
+    
     
 
+def delete_setting(settings, key):
+    key = key.lower()
+    if key in settings.keys():
+        settings.pop(key)
+        return f"Setting '{key}' deleted successfully!"
+    else:
+        return "Setting not found!"
 
-print(add_setting(test_settings,test_tuple))
+def view_settings(test_settings):
+    if not test_settings:
+        return "No settings available."
+    else: 
+        view = "Current User Settings:\n"
+        for key, value in test_settings.items():
+            view += f"{key.capitalize()}: {value.lower()}\n"
+        return view
 
+     
+
+
+"""
+input:
+print(add_setting(test_settings,tuple_test))
+print(update_setting(test_settings,tuple_test3))
+print(delete_setting(test_settings,'theme'))
+print(view_settings(test_settings))
+output:
+"""
