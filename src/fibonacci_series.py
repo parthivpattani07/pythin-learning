@@ -17,9 +17,9 @@ input:
 print(fibonacci(7))
 print(fibonacci(1))
 print(fibonacci(0))
+
 output: 
 [ 0 1 1 2 3 5 8 ]
 [0]
 []
-
 """
