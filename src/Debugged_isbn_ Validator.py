@@ -13,7 +13,6 @@ def validate_isbn(isbn, length):
         if not isbn.isdigit():
             print('Invalid character was found.')
             return
-
     main_digits = isbn[0:length-1]
     given_check_digit = isbn[length-1].upper()
     main_digits_list = [int(digit) for digit in main_digits]
