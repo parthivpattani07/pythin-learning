@@ -8,7 +8,19 @@ class Email:
 
     def mark_as_read(self):
         self.read = True
-    
+
+    def display_full_email(self):
+        self.mark_as_read()
+        print('\n--- Email ---')
+        print(f'From: {self.sender.name}')
+        print(f'To: {self.receiver.name}')
+        print(f'Subject: {self.subject}')
+        print(f'Body: {self.body}')
+        print('------------\n')
+
+    def __str__(self):
+        status = 'Read' if self.read else 'Unread'
+        
 
 class User:
     def __init__(self, name):
