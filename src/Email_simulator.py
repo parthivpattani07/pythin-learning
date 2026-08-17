@@ -81,7 +81,8 @@ class Inbox:
             return
         del self.emails[actual_index]
         print('Email deleted.\n')
-
+"""
+input:
 def main():
     tory = User('Tory')
     ramy = User('Ramy')        
@@ -94,4 +95,9 @@ def main():
     ramy.check_inbox() 
 if __name__ == '__main__':
     main()
+output:
+Email sent from Tory to Ramy!
+
+Email sent from Ramy to Tory!
+"""
 
