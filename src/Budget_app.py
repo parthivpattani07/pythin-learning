@@ -37,7 +37,7 @@ class Category:
 
 
 def create_spend_chart(categories):
-    # Calculate total spent and percentages
+    
     total_spent = 0
     category_spent = []
 
@@ -48,7 +48,7 @@ def create_spend_chart(categories):
 
     percentages = [int((spent / total_spent) * 100 // 10) * 10 for spent in category_spent]
 
-    # Build the chart
+    
     chart = "Percentage spent by category\n"
     for i in range(100, -1, -10):
         chart += f"{i:>3}| "
@@ -56,10 +56,10 @@ def create_spend_chart(categories):
             chart += "o  " if percentage >= i else "   "
         chart += "\n"
 
-    # Add the horizontal line
+    
     chart += "    " + "-" * (3 * len(categories) + 1) + "\n"
 
-    # Add the category names vertically
+    
     max_name_length = max(len(category.name) for category in categories)
     names = [category.name.ljust(max_name_length) for category in categories]
 
