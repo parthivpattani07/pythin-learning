@@ -61,11 +61,14 @@ class Employee:
 
 """
 input:
+
 charlie_brown = Employee('Charlie Brown', 'trainee')
 print(charlie_brown)
 print(f'Base salary: ${charlie_brown.salary}')
 charlie_brown.level = 'junior'
+
 output:
+
 'name' updated to 'Charlie Brown'.
 'Charlie Brown' promoted to 'trainee'.
 Salary updated to $1000.
