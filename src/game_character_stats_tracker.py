@@ -46,3 +46,33 @@ class GameCharacter:
 
     def __str__(self):
          return f"Name: {self.name}\nLevel: {self.level}\nHealth: {self.health}\nMana: {self.mana}"
+
+"""
+input:
+
+thanos= GameCharacter('Thanos') 
+print(thanos)  
+
+thanos.health -= 30  
+thanos.mana -= 10   
+print(thanos) 
+
+thanos.level_up()
+print(thanos)   
+
+output:
+
+Name: Thanos
+Level: 1
+Health: 100
+Mana: 50
+Name: Thanos
+Level: 1
+Health: 70
+Mana: 40
+Thanos leveled up to 2!
+Name: Thanos
+Level: 2
+Health: 100
+Mana: 50
+"""
