@@ -1,4 +1,5 @@
 class GameCharacter:
+    
     def __init__(self,name):
         self._name = name
         self._health = 100
@@ -8,6 +9,7 @@ class GameCharacter:
     @property
     def name(self):
         return self._name
+        
     @property
     def health(self):
         return self._health
@@ -25,6 +27,7 @@ class GameCharacter:
     @property
     def mana(self):
         return self._mana
+        
     @mana.setter
     def mana(self,value):
         self._mana=0
@@ -34,11 +37,12 @@ class GameCharacter:
             self._mana+=0
         if 0<=value<=50:
             self._mana+=value
+            
     @property
     def level(self):
         return self._level
-    def level_up(self):
         
+    def level_up(self):
         self._level+=1
         self.health =100
         self.mana=50
