@@ -32,6 +32,7 @@ class TVSeries(Movie):
     
 
 class MediaCatalogue:
+    
     def __init__(self):
         self.items = []
     
